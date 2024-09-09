@@ -11,7 +11,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, LoginComponent, SignupComponent],
-  providers: [provideRouter(routes), provideHttpClient()],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

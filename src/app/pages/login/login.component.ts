@@ -19,4 +19,6 @@ import { AuthService } from 'src/app/auth/auth.service';
 export class LoginComponent {
   authservice = inject(AuthService);
   router = inject(Router);
+
+  log: boolean = this.authservice.login('user', 'pass');
 }
