@@ -1,19 +1,13 @@
 <nav class="navbar">
   <ul class="navbar-menu">
-    <a routerLink="/login" routerLinkActive="active" href="login">Login</a>
     <li>
-      <a routerLink="/signup" routerLinkActive="active" href="signup">Signup</a>
+      <a (click)="navigate('/login')">Login</a>
     </li>
     <li>
-      <a routerLink="/admin" routerLinkActive="active" href="admin">Admin</a>
+      <a (click)="navigate('/signup')">Signup</a>
     </li>
-  </ul>
-</nav>
-
-<nav>
-  <ul>
     <li>
-      <a (click)="navigate('/admin')">login</a>
+      <a (click)="navigate('/admin')">Admin</a>
     </li>
   </ul>
 </nav>
